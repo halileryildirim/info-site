@@ -21,7 +21,6 @@ http
         filePath += "404.html";
         break;
     }
-
     fs.readFile(filePath, (err, data) => {
       if (err) {
         res.writeHead(404, { "Content-Type": "text/html" });
